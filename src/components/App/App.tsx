@@ -54,7 +54,7 @@ function resetVotes() {
       onVote={handleVote}
   onReset={resetVotes}
  canReset={totalVotes > 0}/>
-   {totalVotes > 0 ? <VoteStats total={totalVotes} positive={positiveRate} votes={votes}/>: <Notification/>}
+   {totalVotes > 0 ? <VoteStats totalVotes={totalVotes} positiveRate={positiveRate} votes={votes}/>: <Notification/>}
   </div>)
 }
 
